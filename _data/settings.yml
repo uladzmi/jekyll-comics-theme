@@ -1,0 +1,7 @@
+menu:
+- {name: 'About',         url: 'about.html'}
+- {name: 'Archive',       url: 'archive.html'}
+
+social:
+- {name: 'Discord',       url: 'https://discord.com/'}
+- {name: 'Instagram',     url: 'https://www.instagram.com/'}
