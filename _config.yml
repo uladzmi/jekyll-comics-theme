@@ -1,0 +1,10 @@
+# Site config
+
+title: Jekyll Comics Theme
+footer: Build with Jekyll
+
+#Plugins
+plugins: [jekyll-paginate]
+
+# jekyll-paginate config
+paginate: 1

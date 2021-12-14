@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+
+{{a}}
+{% include pagination.html %}
+{% for post in paginator.posts %}
+<h2>{{ post.title }}</h2>
+<img src="{{ post.image }}"/>
+<p>{{ post.content }}</p>
+{% endfor %}
+
+{% include pagination.html %}

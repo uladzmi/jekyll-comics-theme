@@ -1,0 +1,12 @@
+<div class="menu">
+  <nav class="menu-content">
+    {% for item in site.data.settings.menu %}
+      <a href="/{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+  <nav class="social-links">
+    {% for item in site.data.settings.social %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</div>

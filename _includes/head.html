@@ -1,0 +1,21 @@
+<head>
+  <title>
+    {{ site.title }}
+  </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap">
+  <script>
+      function randomPost() {
+        page = 1 + Math.floor(Math.random() * 3);
+        link = "/";
+        if (page != 1) {
+          link = "/page" + page + "/";
+        }
+        window.location.href = link;
+      }
+  </script>
+</head>
