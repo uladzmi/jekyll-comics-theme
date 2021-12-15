@@ -1,9 +1,9 @@
 <div class="navigation">
 
   {% if page.previous %}
-    <a href="{{ page.previous.url }}">&laquo; Prev</a>
+    <a href="{{ site.github.url }}{{ page.previous.url }}">&laquo; Prev</a>
   {% elsif page.url == "/" %}
-    <a href="{{ site.posts[1].url }}">&laquo; Prev</a>
+    <a href="{{ site.github.url }}{{ site.posts[1].url }}">&laquo; Prev</a>
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
@@ -11,7 +11,7 @@
   <img src="https://cdn.pixabay.com/photo/2012/04/24/14/32/dice-40271_1280.png" onclick="randomPost();" width="50"/>
 
   {% if page.next %}
-    <a href="{{ page.next.url }}">Next &raquo;</a>
+    <a href="{{ site.github.url }}{{ page.next.url }}">Next &raquo;</a>
   {% else %}
     <span>Next &raquo;</span>
   {% endif %}
