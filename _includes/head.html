@@ -1,6 +1,6 @@
 <head>
   <title>
-    {{ site.title }}
+    {{ page.title }}
   </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ site.github.url }}/assets/css/styles.css">
@@ -10,12 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap">
   <script>
       function randomPost() {
-        page = 1 + Math.floor(Math.random() * 3);
-        link = "{{ site.github.url }}/";
-        if (page != 1) {
-          link = "{{ site.github.url }}/page" + page + "/";
-        }
-        window.location.href = link;
+        // we keep the list of all post urls, may become problematic as it grows
+        posts = [{% for post in site.posts %}"{{ post.url }}",{% endfor %}]
+        i = Math.floor(Math.random() * {{site.posts.size}});
+        window.location.href = '{{ site.github.url }}' + posts[i];
       }
   </script>
 </head>
