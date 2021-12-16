@@ -1,0 +1,27 @@
+.post-hbox{
+
+  margin: 2% 0;
+  position: relative;
+  text-align: center;
+}
+
+.post-hbox-left{
+  display: inline;
+  position: absolute;
+  left: 0;
+
+  #post-title {
+    display: inline;
+  }
+
+}
+
+.post-hbox-mid{
+  display: inline;
+}
+
+.post-hbox-right{
+  display: inline;
+  position: absolute;
+  right: 0;
+}
