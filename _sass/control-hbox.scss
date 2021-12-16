@@ -1,0 +1,47 @@
+.control-hbox{
+  position: relative;
+  text-align: center;
+}
+
+.hbox-left{
+
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 7%;
+
+  max-height: 100%;
+
+  img {
+    vertical-align: inherit;
+  }
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.hbox-mid{
+  display: inline-block;
+
+  img {
+    width: 7%;
+    vertical-align: inherit;
+  }
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hbox-right{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 7%;
+
+  max-height: 100%;
+
+  img {
+    vertical-align: inherit;
+  }
+  vertical-align: middle;
+  text-align: center;
+}

@@ -5,7 +5,9 @@
     <div class="container">
       {% include header.html %}
       <div class="content-container">
+        {% include navigation.html %}
         {{ content }}
+        {% include navigation.html %}
       </div>
       {% include footer.html %}
     </div>
