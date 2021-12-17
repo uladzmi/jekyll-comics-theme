@@ -4,9 +4,9 @@ layout: default
 
 {% include content-header.html %}
 {% if page.url == "/" %}
-  <img src="{{ site.posts.first.image }}"/>
+  <img id="content-image" src="{{ site.posts.first.image }}"/>
   <p>{{ site.posts.first.content }}</p>
 {% else %}
-  <img src="{{ page.image }}"/>
+  <img id="content-image" src="{{ page.image }}"/>
   <p>{{ page.content }}</p>
 {% endif %}
