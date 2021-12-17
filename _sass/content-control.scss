@@ -1,0 +1,40 @@
+.content-control{
+  position: relative;
+
+  max-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+
+  .start {
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+    width: 7%;
+
+  }
+
+  .navigation {
+    display: inline-block;
+
+    #prev-button {
+      margin-right: 7%;
+    }
+    #rand-image {
+      width: 7%;
+    }
+    #next-button {
+      margin-left: 7%;
+    }
+
+  }
+
+  .end {
+    position: absolute;
+    right: 0;
+
+    display: inline-block;
+    width: 7%;
+  }
+
+}

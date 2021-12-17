@@ -2,35 +2,7 @@
 layout: default
 ---
 
-<div class="post-hbox">
-    <span class="post-hbox-left">
-      <h2 id=post-title>
-      {% if page.url == "/" %}
-        {{ site.posts.first.title }}
-      {% else %}
-        {{ page.title }}
-      {% endif %}
-      </h2>
-    </span>
-    <span class="post-hbox-mid">
-      {% if page.url == "/" %}
-        {% for tag in site.posts.first.tags %}
-        {{ tag }}
-        {% endfor %}
-      {% else %}
-        {% for tag in page.tags %}
-        {{ tag }}
-        {% endfor %}
-      {% endif %}
-    </span>
-    <span class="post-hbox-right">
-      {% if page.url == "/" %}
-        {{ site.posts.first.date | date_to_string }}
-      {% else %}
-        {{ page.date | date_to_string }}
-      {% endif %}
-    </span>
-</div>
+{% include content-header.html %}
 {% if page.url == "/" %}
   <img src="{{ site.posts.first.image }}"/>
   <p>{{ site.posts.first.content }}</p>

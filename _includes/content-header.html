@@ -1,0 +1,29 @@
+<div class="content-header">
+    <span class="post-title">
+      <h2 id="title">
+      {% if page.url == "/" %}
+        {{ site.posts.first.title }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+      </h2>
+    </span>
+    <span class="tags">
+      {% if page.url == "/" %}
+        {% for tag in site.posts.first.tags %}
+        {{ tag }}
+        {% endfor %}
+      {% else %}
+        {% for tag in page.tags %}
+        {{ tag }}
+        {% endfor %}
+      {% endif %}
+    </span>
+    <span class="post-date">
+      {% if page.url == "/" %}
+        {{ site.posts.first.date | date_to_string }}
+      {% else %}
+        {{ page.date | date_to_string }}
+      {% endif %}
+    </span>
+</div>
