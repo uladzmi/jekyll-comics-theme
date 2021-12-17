@@ -1,10 +1,11 @@
-<div class="control-hbox">
-    <span class="hbox-left">
+<div class="content-control">
+    <span class="start">
       <a href="{{ site.github.url }}{{ site.posts[-1].url }}">
         <img src="https://cdn.pixabay.com/photo/2016/04/01/09/29/cartoon-1299393_1280.png">
       </a>
     </span>
-    <span class="hbox-mid">
+    <span class="navigation">
+      <span id="prev-button">
       {% if page.previous %}
         <a href="{{ site.github.url }}{{ page.previous.url }}">&laquo; Prev</a>
       {% elsif page.url == "/" %}
@@ -12,16 +13,19 @@
       {% else %}
         &laquo; Prev
       {% endif %}
+      </span>
 
       <img id="rand-image" src="https://cdn.pixabay.com/photo/2013/07/13/01/17/housefly-155460__480.png" onclick="randomPost();"/>
 
-      {% if page.next %}
-        <a href="{{ site.github.url }}{{ page.next.url }}">Next &raquo;</a>
-      {% else %}
-        Next &raquo;
-      {% endif %}
+      <span id="next-button">
+        {% if page.next %}
+          <a href="{{ site.github.url }}{{ page.next.url }}">Next &raquo;</a>
+        {% else %}
+          Next &raquo;
+        {% endif %}
+      </span>
     </span>
-    <span class="hbox-right">
+    <span class="end">
       <a href="{{ site.github.url }}{{ site.posts[0].url }}">
         <img src="https://cdn.pixabay.com/photo/2013/07/12/18/18/rocket-153227_1280.png">
       </a>
