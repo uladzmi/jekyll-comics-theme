@@ -11,11 +11,11 @@
     <span class="tags">
       {% if page.url == "/" %}
         {% for tag in site.posts.first.tags %}
-        {{ tag }}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
         {% endfor %}
       {% else %}
         {% for tag in page.tags %}
-        {{ tag }}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
         {% endfor %}
       {% endif %}
     </span>
