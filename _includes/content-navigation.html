@@ -7,11 +7,11 @@
     <span class="navigation">
       <span id="prev-button">
       {% if page.previous %}
-        <a href="{{ site.github.url }}{{ page.previous.url }}">&laquo; Prev</a>
+        <a href="{{ site.github.url }}{{ page.previous.url }}">&laquo;Prev</a>
       {% elsif page.url == "/" %}
-        <a href="{{ site.github.url }}{{ site.posts[1].url }}">&laquo; Prev</a>
+        <a href="{{ site.github.url }}{{ site.posts[1].url }}">&laquo;Prev</a>
       {% else %}
-        &laquo; Prev
+        &laquo;Prev
       {% endif %}
       </span>
 
@@ -19,9 +19,9 @@
 
       <span id="next-button">
         {% if page.next %}
-          <a href="{{ site.github.url }}{{ page.next.url }}">Next &raquo;</a>
+          <a href="{{ site.github.url }}{{ page.next.url }}">Next&raquo;</a>
         {% else %}
-          Next &raquo;
+          Next&raquo;
         {% endif %}
       </span>
     </span>

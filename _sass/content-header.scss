@@ -1,8 +1,6 @@
 .content-header{
-  margin: 2% 0;
   position: relative;
-
-  text-align: center;
+  height: 2.5rem;
 
   .post-title {
     position: absolute;
@@ -10,9 +8,6 @@
     #title {
       display: inline;
     }
-  }
-
-  .tags {
   }
 
   .post-date {
