@@ -18,8 +18,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      if (window.location.pathname != "/"){
-        document.getElementById("content-container").scrollIntoView();
+      post_header = document.getElementById("content-header");
+      if (post_header && window.location.pathname != "{{ site.github.url }}/"){
+        post_header.scrollIntoView();
       }
     });
   </script>
