@@ -19,9 +19,22 @@
   <script>
     $(document).ready(function(){
       post_header = document.getElementById("content-header");
-      if ((post_header) && (window.location.pathname != "{{ site.github.url | relative_url }}/")){
+      if ((post_header) && (window.location.href != "{{ site.github.url }}/")){
         post_header.scrollIntoView();
       }
     });
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+      if (event.keyCode == 37) {
+          window.location.href = '{{ site.github.url }}{{ page.previous.url }}';
+      }
+      else if (event.keyCode == 39) {
+          window.location.href = '{{ site.github.url }}{{ page.next.url }}';
+      }
+      else if (event.keyCode == 32) {
+          randomPost();
+      }
+    }, true);
   </script>
 </head>
