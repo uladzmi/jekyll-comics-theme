@@ -3,12 +3,20 @@ layout: default
 ---
 
 {% include content-header.html %}
+<hr>
 {% if page.url == "/" %}
   <img id="content-image" src="{{ site.posts.first.image }}"/>
   {% include tags.html %}
+  {% include content-navigation.html %}
   <p>{{ site.posts.first.content }}</p>
 {% else %}
+  <!-- <script type="text/javascript">
+    (function() {
+      document.getElementById("content-container").scrollIntoView();
+    })();
+  </script> -->
   <img id="content-image" src="{{ page.image }}"/>
   {% include tags.html %}
+  {% include content-navigation.html %}
   <p>{{ page.content }}</p>
 {% endif %}
