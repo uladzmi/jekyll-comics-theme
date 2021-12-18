@@ -5,8 +5,10 @@ layout: default
 {% include content-header.html %}
 {% if page.url == "/" %}
   <img id="content-image" src="{{ site.posts.first.image }}"/>
+  {% include tags.html %}
   <p>{{ site.posts.first.content }}</p>
 {% else %}
   <img id="content-image" src="{{ page.image }}"/>
+  {% include tags.html %}
   <p>{{ page.content }}</p>
 {% endif %}

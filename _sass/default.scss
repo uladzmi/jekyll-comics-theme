@@ -3,11 +3,21 @@
   margin-left: auto;
   margin-right: auto;
 
-  text-align: center;
+  text-align: left;
+
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .container {
     width: 90vw;
   }
+}
+
+.tags {
+  font-size: 1rem;
+  word-spacing: 1rem;
+}
+
+.footer {
+  text-align: center;
 }
