@@ -19,6 +19,7 @@
   <script>
     $(document).ready(function(){
       post_header = document.getElementById("content-header");
+      alert(window.location.pathname);
       if ((post_header) && (window.location.pathname != "{{ site.github.url }}/")){
         post_header.scrollIntoView();
       }
