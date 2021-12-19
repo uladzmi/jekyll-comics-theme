@@ -19,17 +19,20 @@
   <script>
     $(document).ready(function(){
       post_header = document.getElementById("content-header");
-      if ((post_header) && (window.location.href != "{{ site.github.url }}/")){
+      if ((post_header) && ("{{page.url}}" != "/")){
         post_header.scrollIntoView();
       }
     });
   </script>
   <script type="text/javascript">
     document.addEventListener('keydown', function(event) {
-      if (event.keyCode == 37) {
+      if ((event.keyCode == 37) && ("{{ page.previous.url }}")) {
           window.location.href = '{{ site.github.url }}{{ page.previous.url }}';
       }
-      else if (event.keyCode == 39) {
+      else if ((event.keyCode == 37) && ("{{page.url}}" == "/")) {
+          window.location.href = '{{ site.github.url }}{{ site.posts[1].url }}';
+      }
+      else if ((event.keyCode == 39) && ("{{ page.next.url }}")) {
           window.location.href = '{{ site.github.url }}{{ page.next.url }}';
       }
       else if (event.keyCode == 32) {
@@ -37,4 +40,5 @@
       }
     }, true);
   </script>
+  {% seo %}
 </head>
