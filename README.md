@@ -1,2 +1,3 @@
-# jekyll-strip
-Yet another minimal Jekyll theme
+# Strip
+
+Jekyll comic strip theme.
