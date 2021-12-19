@@ -1,9 +1,10 @@
 # Site config
 
-title: Jekyll Comics Theme
-footer: Build with Jekyll
+title:        Strip
+description:	Simple Jekyll comic strip theme
+author:       uladzmi
 
 permalink: /:year/:title
 
 #Plugins
-plugins: []
+plugins: [jekyll-seo-tag]
