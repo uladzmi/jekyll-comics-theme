@@ -18,14 +18,15 @@ Sample page: [https://uladzmi.github.io/strip/](https://uladzmi.github.io/strip/
 ## Features
 
 - Single post layout with the latest comic on home page.
-- Random post (press space bar / click on the fly image).
+- Random post (press enter or click on the fly image).
 - Post tagging.
 
 ## References
 
-#### Project
+#### Project and site layout
 
 - [Lagrange Jekyll theme](https://github.com/LeNPaul/Lagrange)
+- [MonkeyUser.com](https://www.monkeyuser.com/)
 
 #### Sample posts
 
