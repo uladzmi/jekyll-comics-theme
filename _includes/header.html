@@ -9,5 +9,19 @@
       </a>
     </div>
     {% include social.html %}
+    <div class="post-title">
+      {% if page.url == "/" %}
+        {{ site.posts.first.title }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </div>
+    <div class="post-date">
+      {% if page.url == "/" %}
+        {{ site.posts.first.date | date_to_string }}
+      {% else %}
+        {{ page.date | date_to_string }}
+      {% endif %}
+    </div>
   </div>
 </header>
