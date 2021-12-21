@@ -1,0 +1,7 @@
+<div class="social-links">
+  {% for item in site.data.settings.social %}
+    <a href="{{ item.url }}" target="_blank">
+      <i class="fa fa-{{ item.icon }}" aria-hidden="true"></i>
+    </a>
+  {% endfor %}
+</div>

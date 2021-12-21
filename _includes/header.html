@@ -1,9 +1,13 @@
 <header class="header">
-  <h1 class="header-title"><a href="{{ site.github.url }}/">{{ site.title }}</a></h1>
-  <div class="logo-container">
-    <a href="{{ site.github.url }}/">
-      <img src="https://cdn.pixabay.com/photo/2020/02/19/05/16/doodle-4861311_1280.jpg">
-    </a>
+  <div class="header-container">
+    <div class="site-title">
+      <a href="{{ site.github.url }}/">{{ site.title }}</a>
+    </div>
+    <div class="site-logo">
+      <a href="{{ site.github.url }}/">
+        <img id="site-logo" src="https://cdn.pixabay.com/photo/2020/02/19/05/16/doodle-4861311_1280.jpg">
+      </a>
+    </div>
+    {% include social.html %}
   </div>
-  {% include menu.html %}
 </header>

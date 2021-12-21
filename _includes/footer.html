@@ -1,7 +1,14 @@
 <footer class="footer">
-  <small class="footer-description">
-    <a href="https://jekyllrb.com/" target=”_blank”>
-      Build with Jekyll
-    </a>
-  </small>
+  <div class="footer-container">
+    <div class="footer-menu">
+      {% for item in site.data.settings.menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="footer-description">
+      <a href="https://jekyllrb.com/" target=”_blank”>
+        Build with Jekyll
+      </a>
+    </div>
+  </div>
 </footer>

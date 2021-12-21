@@ -3,5 +3,5 @@ menu:
 - {name: 'Archive',       url: 'archive.html'}
 
 social:
-- {name: 'Discord',       url: 'https://discord.com/'}
-- {name: 'Instagram',     url: 'https://www.instagram.com/'}
+- {icon: 'github',       url: 'https://github.com/uladzmi'}
+- {icon: 'instagram',    url: 'https://www.instagram.com/'}
