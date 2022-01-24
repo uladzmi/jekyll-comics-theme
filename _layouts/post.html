@@ -5,12 +5,20 @@ layout: default
 <!-- {% include content-header.html %} -->
 <hr>
 {% if page.url == "/" %}
-  <img id="content-image" src="{{ site.posts.first.image }}"/>
+  {% if site.posts.first.image contains "http" %}
+    <img id="content-image" src="{{ site.posts.first.image }}"/>
+  {% else %}
+    <img id="content-image" src="{{ site.github.url }}/assets/img/{{ site.posts.first.image }}"/>
+  {% endif %}
   {% include tags.html %}
   {% include content-navigation.html %}
   <p>{{ site.posts.first.content }}</p>
 {% else %}
-  <img id="content-image" src="{{ page.image }}"/>
+  {% if site.posts.first.image contains "http" %}
+    <img id="content-image" src="{{ page.image }}"/>
+  {% else %}
+    <img id="content-image" src="{{ site.github.url }}/assets/img/{{ page.image }}"/>
+  {% endif %}
   {% include tags.html %}
   {% include content-navigation.html %}
   <p>{{ page.content }}</p>
