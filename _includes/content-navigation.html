@@ -1,7 +1,7 @@
 <div class="content-control">
     <span class="start">
       <a href="{{ site.github.url }}{{ site.posts[-1].url }}">
-        <img src="https://cdn.pixabay.com/photo/2016/04/01/09/29/cartoon-1299393_1280.png">
+        <img src="{{ site.github.url }}/assets/icons/start.png">
       </a>
     </span>
     <span class="navigation">
@@ -15,7 +15,7 @@
       {% endif %}
       </span>
 
-      <img id="rand-image" src="https://cdn.pixabay.com/photo/2013/07/13/01/17/housefly-155460__480.png" onclick="randomPost();"/>
+      <img style="cursor: pointer;" id="rand-image" src="{{ site.github.url }}/assets/icons/random.png" onclick="randomPost();"/>
 
       <span id="next-button">
         {% if page.next %}
@@ -27,7 +27,7 @@
     </span>
     <span class="end">
       <a href="{{ site.github.url }}{{ site.posts[0].url }}">
-        <img src="https://cdn.pixabay.com/photo/2013/07/12/18/18/rocket-153227_1280.png">
+        <img src="{{ site.github.url }}/assets/icons/end.png">
       </a>
     </span>
 </div>
