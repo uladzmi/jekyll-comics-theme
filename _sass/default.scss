@@ -1,6 +1,5 @@
 .container{
   width: 613px;
-  margin-top: -1.5rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -19,6 +18,13 @@
   word-spacing: 1rem;
 }
 
-.footer {
-  text-align: center;
+.footer-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.footer-menu {
+  text-align: left;
+}
+.footer-description {
+  text-align: right;
 }

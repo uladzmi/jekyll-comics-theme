@@ -16,26 +16,18 @@
       }
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      post_header = document.getElementById("content-header");
-      if ((post_header) && ("{{page.url}}" != "/")){
-        post_header.scrollIntoView();
-      }
-    });
-  </script>
   <script type="text/javascript">
     document.addEventListener('keydown', function(event) {
       if ((event.keyCode == 37) && ("{{ page.previous.url }}")) {
           window.location.href = '{{ site.github.url }}{{ page.previous.url }}';
       }
-      else if ((event.keyCode == 37) && ("{{page.url}}" == "/")) {
+      else if ((event.keyCode == 37) && ("{{page.url}}" == "/")) { // left arrow
           window.location.href = '{{ site.github.url }}{{ site.posts[1].url }}';
       }
-      else if ((event.keyCode == 39) && ("{{ page.next.url }}")) {
+      else if ((event.keyCode == 39) && ("{{ page.next.url }}")) { // right arrow
           window.location.href = '{{ site.github.url }}{{ page.next.url }}';
       }
-      else if (event.keyCode == 32) {
+      else if (event.keyCode == 13) { // enter
           randomPost();
       }
     }, true);

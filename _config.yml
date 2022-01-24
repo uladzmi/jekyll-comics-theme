@@ -1,7 +1,7 @@
 # Site config
 
-title:        Strip
-description:	Simple Jekyll comic strip theme
+title:        Comic strip
+description:	simple Jekyll theme
 author:       uladzmi
 
 permalink: /:year/:title
